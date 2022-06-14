@@ -1,10 +1,24 @@
 import { useState } from "react";
+import './index.css'
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+// Typescript was throwing a 'react undefined error', and after trawling through node_modules and babel config,
+// the solution was to add asterisks to the imports. Could have been a problem with the namespace.
 
 function App() {
+  const [expression, setExpression] = useState("");
+
+  // Logic for making the symbols appear on the display sequentially
+  const display = (symbol: any) => {
+    setExpression((prev) => prev + symbol);
+  };
+
   return (
     <div className="container">
       <div className="grid"></div>
       <div className="dis"></div>
+
+      <input type="text" value={expression} placeholder="0" disabled />
       <div onClick={display} className="padButton AC">
         AC
       </div>
@@ -17,7 +31,7 @@ function App() {
       <div onClick={display} className="padButton times">
         x
       </div>
-      <div onClick={display} className="padButton1">
+      <div onClick={() => display("1")} className="padButton1">
         1
       </div>
       <div onClick={display} className="padButton2">
