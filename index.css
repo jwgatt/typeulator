@@ -1,3 +1,4 @@
+
 .container {
   padding-top: 100px;
   display: flex;
@@ -19,22 +20,43 @@
     "zero zero dot equal";
 }
 
+/* Adding custom width interferes with double boxes of equals and zero, maybe due to flexbox */
 .padButton {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px, 40px;
-  background-color: #89849a;
-  color: black;
+  background-color: #677d99;
+  color: rgb(221, 204, 204);
   border: 1.3px solid black;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 20px;
+  font-family: share tech mono,monospace;
 }
-
+.padButton:hover{
+  border: 1px solid white;
+  color: #ccc;
+}
 .dis {
   grid-area: dis;
   background-color: black;
-  align-items: right;
+  text-align: right;
+  font-size: 20px;
+
+}
+.dis input{
+  width: auto;
+  color: aliceblue;
+  text-align: right;
+  padding: 5px 20px;
+  background-color: black;
+  font-family: Digital-7;
+}
+
+.total{
+  padding: 5px 20px;
+  color: yellow;
+  font-family: Digital-7;
   font-size: 40px;
 }
 
@@ -52,5 +74,6 @@
 }
 
 .numbers{
-  background-color: lightgray;
+  background-color: rgb(54, 53, 72);
+
 }
