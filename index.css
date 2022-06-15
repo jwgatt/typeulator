@@ -24,8 +24,8 @@
   justify-content: center;
   align-items: center;
   padding: 20px, 40px;
-  background-color: rgb(75, 55, 146);
-  color: rgb(154, 198, 236);
+  background-color: #89849a;
+  color: black;
   border: 1.3px solid black;
   cursor: pointer;
   font-size: 40px;
@@ -44,4 +44,13 @@
 
 .equal{
   grid-area: equal;
+  background-color: rgb(92, 10, 235);
+}
+
+.power{
+  background-color: red;
+}
+
+.numbers{
+  background-color: lightgray;
 }
