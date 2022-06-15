@@ -1,0 +1,47 @@
+.container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "dis dis dis dis"
+    "AC C divide multiply"
+    "7 8 9 minus"
+    "4 5 6 add"
+    "1 2 3 equal"
+    /* Use two boxes for the zero and equals buttons */
+    "zero zero dot equal";
+}
+
+.padButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px, 40px;
+  background-color: rgb(75, 55, 146);
+  color: rgb(154, 198, 236);
+  border: 1.3px solid black;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.dis {
+  grid-area: dis;
+  background-color: black;
+  align-items: right;
+  font-size: 40px;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.equal{
+  grid-area: equal;
+}
