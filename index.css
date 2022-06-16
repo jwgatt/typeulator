@@ -26,11 +26,11 @@
   justify-content: center;
   align-items: center;
   padding: 20px, 40px;
-  background-color: #677d99;
+  background-color: #56677d;
   color: rgb(221, 204, 204);
-  border: 1.3px solid black;
+  border: 1.5px solid black;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 23px;
   font-family: share tech mono,monospace;
 }
 .padButton:hover{
@@ -38,14 +38,16 @@
   color: #ccc;
 }
 .dis {
+  block-size: 50px;
   grid-area: dis;
   background-color: black;
   text-align: right;
   font-size: 20px;
-
+  height: 65px;
+  width: 250px;
 }
+
 .dis input{
-  width: auto;
   color: aliceblue;
   text-align: right;
   padding: 5px 20px;

@@ -13,15 +13,15 @@ function App() {
   const display = (symbol: any) => {
     setExpression((prev) => prev + symbol);
 
-	{/*	
     // If last character is equals sign, repeat the operator-operand execution.
-    if (expression[expression.length-1] == "=") {
+    if (expression[expression.length - 1] == "=") {
       // Reg expression checks if symbol is digit or dot.
-      if (/[0-9]/.test(symbol)) setExpression(symbol);
-      else {
+      if (/[0-9]/.test(symbol)) {
+        setExpression(symbol);
+      } else {
         setExpression(answer + symbol);
       }
-    }*/}
+    }
   };
 
   // Evaluate expression in display, return the result as state.
@@ -51,9 +51,7 @@ function App() {
       <div className="grid">
         <div className="dis">
           <input type="text" value={expression} placeholder="0" disabled />
-		  <div className="total">
-			{answer}
-		  </div>
+          <div className=" total">{answer}</div>
         </div>
 
         <div onClick={allClear} className="padButton AC power">
